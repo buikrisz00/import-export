@@ -22,9 +22,6 @@ app.get("/image-list", (req, res) => {
     })
 })
 
-
-
-
 app.use("/public", express.static(`${frontend}/public`));
 
 app.listen(port, () => {
