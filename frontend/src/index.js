@@ -1,3 +1,6 @@
+import Swiper from "swiper";
+import 'swiper/css';
+
 async function parseJSON(url) {
     const response = await fetch(url);
     return response.json();

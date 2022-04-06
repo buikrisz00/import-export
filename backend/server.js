@@ -23,6 +23,7 @@ app.get("/image-list", (req, res) => {
 })
 
 app.use("/public", express.static(`${frontend}/public`));
+app.use("/dist", express.static(`${frontend}/dist`));
 
 app.listen(port, () => {
     console.log(`http://127.0.0.1:${port}`);
